@@ -1,4 +1,5 @@
 /**************************** helpers ****************************/
+
 .subtitle {
     font-family: 'Muli', sans-serif;
     font-size: 18px;
@@ -9,6 +10,7 @@
     letter-spacing: 25px;
     color: #ffffff;
 }
+
 .main-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
@@ -19,7 +21,9 @@
     letter-spacing: normal;
     color: #ffffff;
 }
-.white-blue-btn {text-decoration: none;
+
+.white-blue-btn {
+    text-decoration: none;
     text-transform: uppercase;
     font-family: 'Muli', sans-serif;
     font-size: 15px;
@@ -34,7 +38,36 @@
     background-color: #fff;
 }
 
+.vertical-blue-line {
+    position: absolute;
+    border-right: 2px solid #067eb8;
+    top: 9px;
+    left: -30px;
+    height: calc(100% + 180px);
+}
+
+.blue-end-circle {
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 26px);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #067eb8;
+}
+
+.vertical-blue-line .blue-spot {
+    position: absolute;
+    left: calc(50% - 4px);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #067eb8;
+}
+
+
 /**************************** main ****************************/
+
 .header-section {
     width: 100%;
     height: 880px;
@@ -43,12 +76,14 @@
     display: flex;
     position: relative;
 }
+
 .header-section header {
     display: flex;
     justify-content: space-between;
     position: absolute;
     width: 100%;
 }
+
 .logo-block {
     width: 281px;
     height: 128px;
@@ -56,10 +91,12 @@
     align-items: center;
     justify-content: center;
 }
+
 .main-menu {
     margin-right: 66px;
     margin-top: 60px;
 }
+
 .menu-line {
     position: relative;
     display: block;
@@ -68,6 +105,7 @@
     margin: 0px auto 5px auto;
     background-color: #333333;
 }
+
 .center-title-block {
     display: flex;
     justify-content: center;
@@ -76,6 +114,7 @@
     flex-direction: column;
     width: 100%;
 }
+
 .horizontal-blue-line {
     width: 50px;
     height: 3px;
@@ -85,7 +124,9 @@
     margin-bottom: 19px;
 }
 
+
 /**************************** One article section ****************************/
+
 .section-title {
     font-family: Montserrat;
     font-size: 45px;
@@ -97,6 +138,7 @@
     color: #1e2129;
     margin-top: 100px;
 }
+
 .long-horizontal-blue-line {
     width: 100px;
     height: 2px;
@@ -104,18 +146,22 @@
     background-color: #067eb8;
     margin-top: 48px;
     margin-bottom: 97px;
- }
+}
+
 .one-article-section .layer-wrap {
     padding: 83px 95px;
 }
+
 .img-and-layer {
     display: flex;
     justify-content: center;
     position: relative;
 }
+
 .img-and-layer img {
     margin-left: 211px;
 }
+
 .layer {
     position: absolute;
     display: flex;
@@ -128,6 +174,7 @@
     box-shadow: 0 2px 45px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
 }
+
 .layer-date {
     font-size: 16px;
     font-weight: normal;
@@ -138,6 +185,7 @@
     color: #0d0909;
     font-family: 'Muli', sans-serif;
 }
+
 .layer-author {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
@@ -149,9 +197,11 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 .layer-author span {
     font-weight: bold;
 }
+
 .layer-text {
     font-family: Montserrat;
     font-size: 25px;
@@ -162,60 +212,58 @@
     letter-spacing: normal;
     color: #0d0909;
     margin-bottom: 60px;
- }
+}
+
 
 /**************************** Articles section ****************************/
+
+.articles-wrap {
+    position: relative;
+}
+
 .articles-section .section-title {
     margin-bottom: 95px;
 }
+
 .one-article {
-    /* position: relative; */
     height: 100%;
+    position: relative;
 }
-.vertical-blue-line {
-    position: absolute;
-    border-right: 2px solid #067eb8;
-    left: 50%;
-    height: 100%;
-}
-.vertical-blue-line .blue-spot {
-    position: absolute;
-    left: calc(50% - 4px);
-    top: 0;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #067eb8;
-}
+
 .one-article-main {
-    position: absolute;
     width: 40%;
     height: 100%;
 }
+
 .one-article-right {
-    left: calc(50% + 30px);
+    margin-left: calc(50% + 30px);
 }
+
 .blue-rectangle-wrap {
     position: relative;
     height: 100%;
 }
+
 .blue-rectangle-bg {
-    position: relative;
+    position: absolute;
     left: 60px;
     width: 160px;
-    height: 52%;
-    top: -25px;
+    height: calc(100% + 135px);
+    top: -105px;
     background-color: #f7f8fc;
+    z-index: -1;
 }
+
 .one-article-content-wrap {
     position: relative;
     width: 100%;
 }
+
 .one-article-content {
-    position: absolute;
-    top: -9px;
+    position: relative;
     margin-bottom: 180px;
 }
+
 .article-date {
     font-size: 16px;
     font-weight: normal;
@@ -226,6 +274,7 @@
     color: #0d0909;
     font-family: 'Muli', sans-serif;
 }
+
 .article-author {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -237,11 +286,13 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 .article-author span {
     font-weight: bold;
 }
+
 .article-text {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: bold;
     color: #0d0909;
@@ -251,8 +302,137 @@
     box-shadow: 0 2px 45px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     width: 52%;
-    padding: 50px 60px 50px 40px;;
+    padding: 50px 60px 50px 40px;
+    position: relative;
 }
+
 .one-article-content .white-blue-btn {
     margin-left: 20px;
+}
+
+.one-article-quote-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.one-article-quote {
+    width: 40%;
+}
+
+.left {
+    text-align: right;
+    position: absolute;
+    right: calc(50% + 100px);
+    top: 0;
+}
+
+.top-quote-mark {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+}
+
+.quote-inner-wrap {
+    position: relative;
+}
+
+.top-quote-mark-wrap {
+    position: relative;
+}
+
+.bottom-quote-mark-wrap {
+    position: relative;
+}
+
+.bottom-quote-mark {
+    width: 61px;
+    height: 61px;
+    transform: rotate(180deg);
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+}
+
+.one-article-quote .quote-text {
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    line-height: 1.67;
+    color: #1e2129;
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+.one-article-quote .quote-text .quote {
+    position: absolute;
+    top: calc(61px + 50px);
+}
+
+.one-article-left {
+    text-align: right;
+    margin-left: calc(10% - 30px);
+}
+
+.one-article-left .one-article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.one-article-left .article-text {
+    margin-right: 20px;
+    width: 65%;
+}
+
+.one-article-left .white-blue-btn {
+    margin-right: 20px;
+}
+
+.one-article-left .vertical-blue-line {
+    left: calc(100% + 30px);
+}
+
+.one-article-left .blue-rectangle-bg {
+    left: calc(100% - 220px);
+    height: calc(100% - 40px);
+    top: -30px;
+}
+
+.right {
+    left: calc(50% + 100px);
+}
+
+.one-article-picture {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    width: 35%;
+}
+
+.one-article-picture img {
+    width: 100%;
+}
+
+.picture-blue-rectangle-bg {
+    position: absolute;
+    top: -30px;
+    left: calc(50% + 60px);
+    height: 65%;
+    width: 100%;
+    background-color: #f7f8fc;
+}
+
+.one-picture-wrap-left .picture-blue-rectangle-bg {
+    left: 0;
+    width: calc(50% - 60px);
+}
+
+.one-article-quote.right {
+    position: absolute;
+    top: 0;
+}
+
+.one-article-quote.right .one-article-quote-wrap .quote-text {
+    left: 0;
 }
